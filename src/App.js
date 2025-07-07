@@ -208,7 +208,14 @@ function App() {
     }
   };
 
+
 return (
+    <div className="App">
+      <h1>🌤 Weather App</h1>
+      <p>This is a live weather application using OpenWeather API.</p>
+    </div>
+  );
+}
   <div className={`app-container ${getBackgroundClass()}`}>
       <div className="weather-card">
         <div className="input-row">
