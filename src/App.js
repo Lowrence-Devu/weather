@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import { Line } from 'react-chartjs-2';
-
 import {
   Chart as ChartJS,
   LineElement,
@@ -208,15 +207,8 @@ function App() {
     }
   };
 
-
-return (
-    <div className="App">
-      <h1>🌤 Weather App</h1>
-      <p>This is a live weather application using OpenWeather API.</p>
-    </div>
-  );
-}
-  <div className={`app-container ${getBackgroundClass()}`}>
+  return (
+    <div className={`app-container ${getBackgroundClass()}`}>
       <div className="weather-card">
         <div className="input-row">
           <input
@@ -244,7 +236,7 @@ return (
         )}
 
         <div className="input-row">
-              <button onClick={() => setUnit(unit === 'metric' ? 'imperial' : 'metric')}>Unit: {unit === 'metric' ? '°C' : '°F'}</button>
+          <button onClick={() => setUnit(unit === 'metric' ? 'imperial' : 'metric')}>Unit: {unit === 'metric' ? '°C' : '°F'}</button>
           <select value={lang} onChange={e => setLang(e.target.value)}>
             <option value="en">🇬🇧 English</option>
             <option value="fr">🇫🇷 French</option>
